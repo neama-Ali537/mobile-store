@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {  createHashRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
 import Home from "./Componants/Home/Home";
@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import DataContextProvider from "./Componants/DataContext/DataContextProvider";
 import About from "./Componants/About/About";
 import SmartPhones from "./Componants/SmartPhones/SmartPhones";
-import Taskes from "./Componants/Taskes/Taskes";
+
 
 import ShoppingCartProvider from "./Componants/ShoppingCartContext/ShoppingCartProvider";
 import CheckOut from "./Componants/CheckOut/CheckOut";
@@ -23,7 +23,7 @@ function App() {
   const togelDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout dakrMode={darkMode} setDarkMode={togelDarkMode} />,
