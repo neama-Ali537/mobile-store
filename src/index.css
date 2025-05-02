@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ body{
+    overflow-x: hidden;
+ }
+ .home {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/imgs/home.webp');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ 
+   width: 100vw;
+ }
+
+ 
